@@ -29,7 +29,7 @@ local function filler_begone(win)
 
   vim.api.nvim_win_call(win, function()
     local line_count = vim.api.nvim_buf_line_count(buf)
-    local win_height = math.min(vim.api.nvim_win_get_height(win), line_count)
+    local win_height = math.min(vim.fn.winheight(win), line_count)
 
     -- check how many lines are visible from the buffer, starting from the line currently at the top of the window
     local top_line = vim.fn.line('w0', win)
