@@ -4,8 +4,6 @@ Prevents neovim from scrolling past the bottom of the buffer and showing unneces
 
 Special thanks to [zeertzjq](https://github.com/zeertzjq), [justinmk](https://github.com/justinmk), [seandewar](https://github.com/seandewar), and [echasnovski](https://github.com/echasnovski) for their help!
 
-Note: When using `vim._extui`, set `vim.o.showcmd = false` to prevent an issue with forced redrawing causing flickering. Thanks [stefanboca](https://github.com/stefanboca) for debugging this!
-
 ## Installation
 
 ```lua
